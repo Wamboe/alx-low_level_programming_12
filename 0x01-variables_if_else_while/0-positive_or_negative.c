@@ -2,12 +2,13 @@
 #include <time.h>
 #include <stdio.h>
 
-/* 
- * testing whether a no is
- * 0
- * negative
- * positve
-*/
+/**
+ * main - Entry point
+ *
+ * Description: 'getting the last of  random number and comparing it to 5'
+ *
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
@@ -16,17 +17,17 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-	/*if (n > 0)
+	if (n > 0)
 	{
 		printf("%d is positive\n", n);
 	}
 	else if (n < 0)
 	{
-                printf("%d is negative\n", n);
-        }
+		printf("%d is negative\n", n);
+	}
 	else
 	{
-        	printf("%d is zero\n", n);
-        }*/
+		printf("%d is zero\n", n);
+	}
 	return (0);
 }
