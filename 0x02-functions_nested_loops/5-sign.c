@@ -1,7 +1,7 @@
 #include "main.h"
 
 /*
- * print_sign - check the code for negative and ints.
+ * print_sign - a function that prints the sign of a number
  *
  * Description: checks whether neg pos or zero
  *
