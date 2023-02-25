@@ -28,19 +28,23 @@ void times_table(void)
 			{
 				_putchar(secondlast + '0');
 				_putchar(last + '0');
+				if (num2 < 9)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
 			}
 			else
 			{
 				_putchar(last + '0');
+				if (num2 < 9)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+				}
 			}
-
-			if (num2 < 9)
-			{
-				_putchar(',');
-			}
-
 		}
 		_putchar('\n');
-		_putchar(' ');
 	}
 }
