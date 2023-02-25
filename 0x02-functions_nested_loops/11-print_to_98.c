@@ -53,7 +53,7 @@ void lessThanEq98(int n)
 		{
 			_putchar('-');
 			thirdlast = thirdlast * -1;
-			seclast = secondlast * -1;
+			seclast = seclast * -1;
 			last = last * -1;
 		}
 		if (seclast == 0 && thirdlast == 0)
@@ -77,6 +77,7 @@ void lessThanEq98(int n)
 			_putchar(' ');
 		}
 	}
+}
 
 /**
  * greaterThanEq98 - n >= 98
