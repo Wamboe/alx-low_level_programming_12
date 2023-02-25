@@ -4,7 +4,7 @@
 /**
  * _islower - function definition
  *
- * @c : this is an integer
+ * @c: this is an integer
  *
  * Description: 'checks for lower case'
  *
