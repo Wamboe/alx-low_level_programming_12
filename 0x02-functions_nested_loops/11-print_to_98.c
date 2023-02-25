@@ -41,23 +41,32 @@ void lessThanEq98(int n)
 {
 	int last;
 	int secondlast;
+	int thirdlast;
 
 	for (n = n; n <= 98; n++)
 	{
+		thirdlast = (n / 100) % 10;
 		secondlast = (n / 10) % 10;
 		last = n % 10;
 
 		if (n < 0)
 		{
 			_putchar('-');
+			thirdlast = thirdlast * -1;
 			secondlast = secondlast * -1;
 			last = last * -1;
 		}
-		if (secondlast == 0)
+		if (secondlast == 0 && thirdlast == 0)
 		{
 			_putchar(last + '0');
 		}
-		else
+		else if ((secondlast <= 0 && thirdlast > 0) || (secondlast >= 0 && thirdlast > 0))
+		{
+			_putchar(thirdlast + '0');
+			_putchar(secondlast + '0');
+			_putchar(last + '0');
+		}
+		else if (secondlast > 0 && thirdlast == 0)
 		{
 			_putchar(secondlast + '0');
 			_putchar(last + '0');
