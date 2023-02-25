@@ -1,7 +1,9 @@
 #include "main.h"
 
-/*
- * print_sign - a function that prints the sign of a number
+/**
+ * print_sign - function that prints the sign of a number
+ *
+ * @n: number whether - or +
  *
  * Description: checks whether neg pos or zero
  *
