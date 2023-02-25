@@ -40,35 +40,35 @@ void print_to_98(int n)
 void lessThanEq98(int n)
 {
 	int last;
-	int secondlast;
+	int seclast;
 	int thirdlast;
 
 	for (n = n; n <= 98; n++)
 	{
 		thirdlast = (n / 100) % 10;
-		secondlast = (n / 10) % 10;
+		seclast = (n / 10) % 10;
 		last = n % 10;
 
 		if (n < 0)
 		{
 			_putchar('-');
 			thirdlast = thirdlast * -1;
-			secondlast = secondlast * -1;
+			seclast = secondlast * -1;
 			last = last * -1;
 		}
-		if (secondlast == 0 && thirdlast == 0)
+		if (seclast == 0 && thirdlast == 0)
 		{
 			_putchar(last + '0');
 		}
-		else if ((secondlast <= 0 && thirdlast > 0) || (secondlast >= 0 && thirdlast > 0))
+		else if ((seclast <= 0 && thirdlast > 0) || (seclast >= 0 && thirdlast > 0))
 		{
 			_putchar(thirdlast + '0');
-			_putchar(secondlast + '0');
+			_putchar(seclast + '0');
 			_putchar(last + '0');
 		}
-		else if (secondlast > 0 && thirdlast == 0)
+		else if (seclast > 0 && thirdlast == 0)
 		{
-			_putchar(secondlast + '0');
+			_putchar(seclast + '0');
 			_putchar(last + '0');
 		}
 		if (n != 98)
@@ -77,7 +77,6 @@ void lessThanEq98(int n)
 			_putchar(' ');
 		}
 	}
-}
 
 /**
  * greaterThanEq98 - n >= 98
