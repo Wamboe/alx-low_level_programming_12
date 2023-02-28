@@ -19,6 +19,4 @@ void puts2(char *str)
 		i = i + 2;
 	}
 	_putchar('\n');
-
-	
 }
