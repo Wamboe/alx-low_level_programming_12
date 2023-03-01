@@ -13,7 +13,7 @@ void getNum(int num);
 
 void print_array(int *a, int n)
 {
-	int i = 0 ,num; 
+	int i = 0, num;
 
 	while (i < n)
 	{
@@ -29,7 +29,7 @@ void print_array(int *a, int n)
 		{
 			getNum(num);
 		}
-		
+
 		if (i < n - 1)
 		{
 			_putchar(',');
@@ -56,18 +56,18 @@ void getNum(int num)
 
 	if (thousands == 0 && hundreds == 0 && tens == 0)
 	{
-		 _putchar(ones + '0');
+		_putchar(ones + '0');
 	}
 	else if (thousands == 0 && hundreds == 0)
 	{
 		_putchar(tens + '0');
 		_putchar(ones + '0');
 	}
-	else if  (thousands == 0)
+	else if (thousands == 0)
 	{
-		 _putchar(hundreds + '0');
-		 _putchar(tens + '0');
-		 _putchar(ones + '0');
+		_putchar(hundreds + '0');
+		_putchar(tens + '0');
+		_putchar(ones + '0');
 	}
 	else
 	{
