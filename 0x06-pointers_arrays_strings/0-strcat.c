@@ -6,11 +6,13 @@
  * @dest: first string
  * @src: second string
  * Description: function that concatenates two strings
- * Return: a concatenated sting*/
+ * Return: a concatenated sting
+*/
 
 char *_strcat(char *dest, char *src)
 {
 	int i;
+
 	i = strlen(dest);
 
 	while (*src)
@@ -21,5 +23,4 @@ char *_strcat(char *dest, char *src)
 	}
 
 	return (dest);
-
 }
