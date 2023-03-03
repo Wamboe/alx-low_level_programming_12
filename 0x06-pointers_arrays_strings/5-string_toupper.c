@@ -9,14 +9,11 @@
 
 char *string_toupper(char *c)
 {
-	int i = 0;
-
-	while (*(c+i) != '\0')
+	while (*c != '\0')
 	{
-		if ((*(c+i) >= 'a') && (*(c+i) <= 'z'))
+		if (*c >= 'a' && *c <= 'z')
 		{
-			char new = *c - 32;
-			*(c+i) = new;
+			*c = *c -32;
 		}
 		c++;
 	}
